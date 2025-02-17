@@ -36,7 +36,7 @@ public class Ejercicio3App {
 		System.out.println("La resta de N % M es "+percentage2);
 		double add3=X+N;
 		System.out.println("La suma de X + N es "+add3);
-//		double 
+ 
 		
 		
 	}
