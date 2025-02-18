@@ -20,6 +20,7 @@ public class Ejercicio3App {
 		System.out.println("La resta de X - Y es "+substract);
 		double multiply= X*Y;
 		System.out.println("El producto de X * Y es "+multiply);
+		
 //		double divide=X/Y;
 		System.out.println("El cociente de X / Y es "+X/Y);
 		double percentage=X%Y;
@@ -36,8 +37,14 @@ public class Ejercicio3App {
 		System.out.println("La resta de N % M es "+percentage2);
 		double add3=X+N;
 		System.out.println("La suma de X + N es "+add3);
- 
+	    double divide3=Y/M;
+	    System.out.println("El cociente de Y / M es "+divide3);
+	    double percentage3=Y%M;
+	    System.out.println("La resta de Y % M es "+percentage3);
+		System.out.println("La suma de todos los variables es "+ (X+Y+N+M));
 		
+		System.out.println("El producto de todos los variables es "+ (X*Y*N*M));
+		System.out.println("El doble de cada variable es "+ (2*X) (2*Y) (2*N) (2*M));
 		
 	}
 
