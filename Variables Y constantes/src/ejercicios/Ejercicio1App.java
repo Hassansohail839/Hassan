@@ -7,7 +7,11 @@ public class Ejercicio1App {
               int a=10;
               int b=20;
               int suma=a+b;
-              System.out.print("La suma de a + b es " + suma);
+              System.out.println("La suma de a + b es " + suma);
+              System.out.println("La resta de a - b es " + (a-b));
+              System.out.println("El producto de a * b es " + (a*b));
+              System.out.println("La division de a / b es " + (a/b));
+              System.out.println("El modulo de A % B es " + (a%b));
 
 	}
 
