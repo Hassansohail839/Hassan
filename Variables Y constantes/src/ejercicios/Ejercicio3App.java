@@ -44,8 +44,11 @@ public class Ejercicio3App {
 		System.out.println("La suma de todos los variables es "+ (X+Y+N+M));
 		
 		System.out.println("El producto de todos los variables es "+ (X*Y*N*M));
-		System.out.println("El doble de cada variable es "+ (2*X) (2*Y) (2*N) (2*M));
-		
+		System.out.println("El doble de X "+ (2*X));
+		System.out.println("El doble de Y "+ (2*Y));
+		System.out.println("El doble de N "+ (2*N));
+		System.out.println("El doble de M "+ (2*M));
+	
 	}
 
 }
