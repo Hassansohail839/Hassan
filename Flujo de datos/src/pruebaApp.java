@@ -3,13 +3,18 @@ import javax.swing.JOptionPane;
 public class pruebaApp {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Lee un número por teclado que pida el precio de un producto
+		//(puede tener decimales) 
+		//y calcule el precio final con IVA. 
+		//El IVA sera una constante que sera del 21%
+		
+double iva =0.21;
+double precio = Double.parseDouble(JOptionPane.showInputDialog("Introduce el precio del producto"));
+double precioFinal = precio + (precio*iva);
+JOptionPane.showMessageDialog(null, "El precio final con IVA es de " + precioFinal);
 
-		String texto_num = JOptionPane.showInputDialog("Introduce un numero entero");
-		int radio = Integer.parseInt(texto_num);
-		JOptionPane.showMessageDialog(null,
-				"El circulo tiene un radio de " + radio + " y su area es " + (PI * (radio * 2)));
 
+	
 		
 	}
 
