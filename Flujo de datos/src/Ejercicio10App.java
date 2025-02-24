@@ -7,7 +7,7 @@ public class Ejercicio10App {
 		//Al final mostrara la suma de todas las ventas. Piensa que es lo que se repite y lo que no.
 		
 		java.util.Scanner sc = new java.util.Scanner(System.in);
-		System.out.println("Introduce el número de ventas a introducir");
+		System.out.println("Introduce el número de ventas: ");
 		int numeroVentas = sc.nextInt();
 		int sumaVentas = 0;
 		for (int i = 1; i <= numeroVentas; i++) {
