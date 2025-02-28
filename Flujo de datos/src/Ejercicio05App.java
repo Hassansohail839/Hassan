@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-public class Ejercicio5App {
+public class Ejercicio05App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

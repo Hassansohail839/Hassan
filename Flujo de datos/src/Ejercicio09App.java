@@ -1,5 +1,5 @@
 
-public class Ejercicio9App {
+public class Ejercicio09App {
 
 	public static void main(String[] args) {
 		// Muestra los números del 1 al 100 (ambos incluidos) divisibles entre 2 y 3. 

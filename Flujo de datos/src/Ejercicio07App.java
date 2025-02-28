@@ -1,5 +1,5 @@
 
-public class Ejercicio7App {
+public class Ejercicio07App {
 
 	public static void main(String[] args) {
 		//Muestra los números del 1 al 100 (ambos incluidos). 

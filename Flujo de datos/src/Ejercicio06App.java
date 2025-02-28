@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-public class Ejercicio6App {
+public class Ejercicio06App {
 
 	public static void main(String[] args) {
 		// Lee un número por teclado que pida el precio de un producto

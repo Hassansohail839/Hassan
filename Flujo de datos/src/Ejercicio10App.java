@@ -1,4 +1,3 @@
-
 public class Ejercicio10App {
 
 	public static void main(String[] args) {
@@ -9,7 +8,7 @@ public class Ejercicio10App {
 		java.util.Scanner sc = new java.util.Scanner(System.in);
 		System.out.println("Introduce el número de ventas: ");
 		int numeroVentas = sc.nextInt();
-		int sumaVentas = 0;
+		int sumaVentas=0;
 		for (int i = 1; i <= numeroVentas; i++) {
 			System.out.println("Introduce el precio de la venta " + i);
 			int venta = sc.nextInt();
