@@ -27,5 +27,4 @@ public class Ejercicio12App {
 		}
 
 	}
-
-}
+}	
