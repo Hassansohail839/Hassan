@@ -17,47 +17,30 @@ public class Ejercicio01App {
 //		Cuadrado: lado * lado
 		
 		Scanner sc= new Scanner(System.in);
-//		System.out.println("Introduce el nombre de la figura: ");
-//		String Figura= sc.next();
-//		
-//		if(Figura=circulo) {
-//			System.out.println("Introduce el radio del circulo: ");
-//			double radio=sc.nextDouble();
-//			System.out.println("La area del circulo es: " +calcularAreaCirculo (radio) + "\n"+"\n");
-//			
-//		} else if (Figura=triangulo){
-//			
-//			System.out.println("Introduce el base del triangulo: ");
-//			double base=sc.nextDouble();
-//			System.out.println("Introduce la altura del triangulo: ");
-//			double altura=sc.nextDouble();
-//			System.out.println("La area del triangulo es :" + calcularAreaTriangulo (base, altura) + "\n"+"\n"  );
-//		} else {
-//			System.out.println("Introduce el lado del cuadrado: ");
-//			double lado=sc.nextDouble();
-//			System.out.println("La area del cuadrado es "+ calcularAreaCuadrado (lado) + "\n" );
-//		}
+	System.out.println("Introduce el nombre de la figura: ");
+	String Figura= sc.next();
+		
+		switch (Figura) {
+		case "circulo":
+			System.out.println("Introduce el radio del circulo: ");
+			double radio=sc.nextDouble();
+			System.out.println("La area del circulo es: " +calcularAreaCirculo (radio) + "\n"+"\n");
+			break;
+		
+		case "triangulo":
+			System.out.println("Introduce el base del triangulo: ");
+			double base=sc.nextDouble();
+			System.out.println("Introduce la altura del triangulo: ");
+			double altura=sc.nextDouble();
+			System.out.println("La area del triangulo es :" + calcularAreaTriangulo (base, altura) + "\n"+"\n"  );
+			break;
 			
-		
-		
-		//CIRCULO
-		System.out.println("Introduce el radio del circulo: ");
-		double radio=sc.nextDouble();
-		System.out.println("La area del circulo es: " +calcularAreaCirculo (radio) + "\n"+"\n");
-		
-		//TRIANGULO
-		System.out.println("Introduce el base del triangulo: ");
-		double base=sc.nextDouble();
-		System.out.println("Introduce la altura del triangulo: ");
-		double altura=sc.nextDouble();
-		System.out.println("La area del triangulo es :" + calcularAreaTriangulo (base, altura) + "\n"+"\n"  );
-		
-		//CUADRADO
-		System.out.println("Introduce el lado del cuadrado: ");
-		double lado=sc.nextDouble();
-		System.out.println("La area del cuadrado es "+ calcularAreaCuadrado (lado) + "\n" );
-		
-		
+		case "cuadrado":
+				System.out.println("Introduce el lado del cuadrado: ");
+			double lado=sc.nextDouble();
+			System.out.println("La area del cuadrado es "+ calcularAreaCuadrado (lado) + "\n" );
+			break;
+		}
 		
 		}
  public static double calcularAreaCirculo (double radio) {
