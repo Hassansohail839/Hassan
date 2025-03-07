@@ -14,6 +14,7 @@ public class pruebaApp {
 		System.out.print("Introduce el rango máximo del random: ");
 		int range = scanner.nextInt();
 		
+
 		int[] randomArray1 = generarRandomArray(size, range);
 		
 		int[] randomArray2 = generarArray2(randomArray1);
