@@ -1,12 +1,9 @@
-import java.util.Random;
 import java.util.Scanner;
 
-public class pruebaApp {
+public class Ejercicio11App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		crea un método que tenga como parámetros, los dos arrays y devuelva uno nuevo
-//		con la multiplicación de la posición 0 del array1 con el del array2 y así sucesivamente
 
 		        Scanner scanner = new Scanner(System.in);
 
