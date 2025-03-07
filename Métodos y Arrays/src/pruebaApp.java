@@ -5,70 +5,57 @@ public class pruebaApp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+//		crea un método que tenga como parámetros, los dos arrays y devuelva uno nuevo
+//		con la multiplicación de la posición 0 del array1 con el del array2 y así sucesivamente
 
-		Scanner scanner = new Scanner(System.in);
+		        Scanner scanner = new Scanner(System.in);
 
-		System.out.print("Introduce el tamaño del array: ");
+		        System.out.print("Introduce el tamaño del array: ");
+		        int size = scanner.nextInt();
+		        System.out.print("Introduce el rango máximo del random: ");
+		        int range = scanner.nextInt();
 
-		int size = scanner.nextInt();
-		System.out.print("Introduce el rango máximo del random: ");
-		int range = scanner.nextInt();
-		
+		        // Generar el primer y segundo array con valores aleatorios
+		        int[] randomArray1 = generarArray(size, range);
+		        int[] randomArray2 = generarArray(size, range);
 
-		int[] randomArray1 = generarRandomArray(size, range);
-		
-		int[] randomArray2 = generarArray2(randomArray1);
+		        // Multiplicar los arrays
+		        int[] randomArray3 = multiplicarArrays(randomArray1, randomArray2);
 
-		System.out.println("Array random 1: ");
-		printArray1(randomArray1);
-		System.out.println("Array random 2: ");
-		printArray2(randomArray1);
+		        // Imprimir los arrays
+		        System.out.println("Array random 1: ");
+		        printArray(randomArray1);
+		        System.out.println("Array random 2: ");
+		        printArray(randomArray2);
+		        System.out.println("Multiplicación de los arrays: ");
+		        printArray(randomArray3);
 
-		scanner.close();
-	}
+		        scanner.close();
+		    }
 
-	private static int[] generarArray2(int[] randomArray1) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+		    // Método para generar un array de tamaño 'size' con valores aleatorios en el rango [0, max)
+		    public static int[] generarArray(int size, int max) {
+		        int[] array = new int[size];
+		        for (int i = 0; i < size; i++) {
+		            array[i] = (int) (Math.random() * max);
+		        }
+		        return array;
+		    }
 
-	public static int[] generarRandomArray(int size, int max) {
+		    // Método para imprimir un array
+		    public static void printArray(int[] array) {
+		        for (int i = 0; i < array.length; i++) {
+		            System.out.print(array[i] + " ");
+		        }
+		        System.out.println(); // Para un salto de línea al final
+		    }
 
-		int[] array1 = new int[size];
-
-		for (int i = 0; i < size; i++) {
-			array1[i] = (int) (Math.random() * max);
+		    // Método para multiplicar los elementos correspondientes de dos arrays
+		    public static int[] multiplicarArrays(int[] array1, int[] array2) {
+		        int[] array3 = new int[array1.length];
+		        for (int i = 0; i < array1.length; i++) {
+		            array3[i] = array1[i] * array2[i];
+		        }
+		        return array3;
+		    }
 		}
-		return array1;
-
-	}
-
-	public static int[] generarArray2(int size, int max) {
-		
-		//Recorrer array1 para igualar array2
-		
-		
-		//Randomizar array2
-		
-
-		int[] array2 = new int[size];
-
-		for (int i = 0; i < size; i++) {
-			array2[i] = (int) (Math.random() * max);
-		}
-		 return array2;
-	}
-
-	public static void printArray1(int[] array) {
-		for (int i = 0; i < array.length; i++) {
-			System.out.println(array[i]);
-		}
-	}
-
-	public static void printArray2(int[] array) {
-		for (int i = 0; i < array.length; i++) {
-			System.out.println(array[i]);
-		}
-	}
-
-}
