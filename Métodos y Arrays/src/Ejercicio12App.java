@@ -30,7 +30,7 @@ public class Ejercicio12App {
 		        int index = 0;
 		        while (index < size) {
 		            // Generar un número aleatorio
-		            int numero = random.nextInt(301);  // Genera un número entre 0 y 999
+		            int numero = random.nextInt(301);  // Genera un número entre 0 y 300
 		            
 		            // Verificar si el último dígito del número coincide con el dígito final
 		            if (numero % 10 == digitoFinal) {
