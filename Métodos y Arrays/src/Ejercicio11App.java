@@ -31,10 +31,10 @@ public class Ejercicio11App {
 		    }
 
 		    // Método para generar un array de tamaño 'size' con valores aleatorios en el rango [0, max)
-		    public static int[] generarArray(int size, int max) {
+		    public static int[] generarArray(int size, int range) {
 		        int[] array = new int[size];
 		        for (int i = 0; i < size; i++) {
-		            array[i] = (int) (Math.random() * max);
+		            array[i] = (int) (Math.random() * range);
 		        }
 		        return array;
 		    }
