@@ -7,26 +7,34 @@ public class Ejercicio04App {
 
 		Scanner sc= new Scanner (System.in);
 		System.out.println("Introduce el numero: ");
-		long numero= sc.nextInt();
+		int numero= sc.nextInt();
 		
-		if (numero < 0) {
-		System.out.println("No se puede calcular factorial de este numero. ");
+		  // Llamar al método para calcular el factorial
+        long factorial = calcularFactorial(numero);	
+        
+     // Mostrar el resultado
+        System.out.println("El factorial de " + numero + " es: " + factorial);
+
+        
+
+	}
 	
-		} else {
-			long resultado = calcularFactorial(numero);
-		}
+	// Método para calcular el factorial de un número
+	 public static long calcularFactorial (int numero) {
 		 
-	
+		 // Si el número es 0 o 1, el factorial es 1	
+		 if (numero==0 || numero==1) {
+			 return 1;
+			} 
+		 
+		 // Variable para almacenar el resultado del factorial
+	long resultado = 1;
+	  // Multiplicar los números desde 1 hasta el número ingresado
+	for (int i=2; i<=numero; i++) {
+		resultado=resultado*i;
 		
 	}
-
-	 public static long calcularFactorial (numero) {
-	
-	long factorial = 1;
-	for (int i=1; numero>0; i++) {
-		factorial*= i;
-		 return factorial;
-	}	
+	return resultado;
 }
 
 	 
