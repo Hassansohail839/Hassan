@@ -20,7 +20,7 @@ public class Ejercicio07App {
 		
 	
     public static void cambioMoneda(double cantidadEuros, String moneda) {
-    	double resultado=0.0;
+    	double resultado;
     	if (moneda.equals("libras")) {
             resultado = cantidadEuros * 0.86;
             System.out.println(cantidadEuros + "€ son " + resultado + "£.");
