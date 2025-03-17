@@ -5,11 +5,6 @@ public class Ejercicio10App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		Crea un array de números de un tamaño pasado por teclado. 
-//		El array contendrá números aleatorios primos entre los números deseados. 
-//		Por último nos indicar cual es el mayor de todos.
-//		Haz un método para comprobar que el número aleatorio es primo, puedes hacer todos lo
-//		métodos que necesites
 
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Introduce el tamaño del array: ");
