@@ -4,9 +4,6 @@ public class Ejercicio08App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		Crea un array de 10 posiciones de números con valores pedidos por teclado. Muestra por
-//		consola el indice y el valor al que corresponde. 
-//		Haz dos métodos, uno para rellenar valores y otro para mostrar.
 
 		int num[]=new int [10];
 		
