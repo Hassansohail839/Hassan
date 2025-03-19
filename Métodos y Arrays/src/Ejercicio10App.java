@@ -14,7 +14,7 @@ public class Ejercicio10App {
 		System.out.println("Introduce el valor maximo: ");
 		int max=sc.nextInt();
 		int[] arrayPrimos=new int[size];
-		Random rand= new Random();
+		Random rand= new Random();	
 		for (int i = 0; i <size; i++) {
             int numeroAleatorio;
             do {

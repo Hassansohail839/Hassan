@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.swing.JOptionPane;
-
 public class Ejercicio01App {
 
 	public static void main(String[] args) {
