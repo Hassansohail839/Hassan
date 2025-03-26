@@ -33,20 +33,20 @@ public class Ejercicio03App {
 			System.out.print("Elija una opción: ");
 
 			int opcion = sc.nextInt();
-            sc.nextLine();
+			sc.nextLine();
 
 			switch (opcion) {
 			case 1:
 				agregarArticulo(stock, sc);
 				break;
 
-           case 2:
+			case 2:
 				consultarArticulo(stock, sc);
 				break;
 //            
-            case 3:
-            	listarArticulos(stock, sc);
-            	break; 
+			case 3:
+				listarArticulos(stock, sc);
+				break;
 
 			case 4:
 				System.out.println("Saliendo...");
@@ -91,14 +91,15 @@ public class Ejercicio03App {
 //		return;
 
 	}
+
 //	
 //	
-	public static void listarArticulos(HashMap<String, Double> stock, Scanner sc ) {
-		 System.out.println("\nInventario:" + stock +  " - €");
-//		 double producto = 0;
-//		 for (Entry<String, Double> lista : stock.entrySet()) {
-//	            System.out.println(producto + " - €" + stock.containsKey(producto) +stock.get(producto));
-	        }
+	public static void listarArticulos(HashMap<String, Double> stock, Scanner sc) {
+//		 System.out.println("\nInventario:" + "\n" + stock +  " -€");
+		double producto = 0;
+		for (Entry<String, Double> lista : stock.entrySet()) {
+//			System.out.println(producto + " - €" + stock.containsKey(producto) + stock.get(producto));
+			System.out.println(lista + "€");
+		}
 	}
-
-
+}
