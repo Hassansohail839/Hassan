@@ -16,6 +16,7 @@ public class Password {
 		this.passcode = generatePassword(longitud);
 	}
 
+    //	
 	private String
 	generatePassword(int longitud) {
 		// TODO Auto-generated method stub
