@@ -8,11 +8,11 @@ public class Tarea6Cine {
 //
 //	}
 	
-	//Atributos
+	//Atributos (Variable tipo String que guarda el nombre de la pelicula y int que guarda el precio)
 	private String pelicula;
 	private int precio;
 
-	//
+	// Constructor (toma como argumento el nombre de la pelicula y asigna ese valor a el atributo pelicula)
 	public Tarea6Cine(String pelicula) {
 		this.pelicula = pelicula;
 		this.precio = 12;
@@ -34,10 +34,11 @@ public class Tarea6Cine {
 		this.precio = precio;
 	}
 
+	//Metodo main con la pelicula llamada "si"
 	public static void main(String[] args) {
 		Tarea6Cine test2 = new Tarea6Cine("Si");
 	
-		
+		//Objeto pelicula 
 		Pelicula test3 = new Pelicula("Inter", 75, 18, "luis");
 
 // Matriz 8*8
@@ -49,7 +50,7 @@ public class Tarea6Cine {
 				{ "H1", "H2", "H3", "H4", "H5", "H6", "H7", "H8" } };
 
 		
-//Inicializar variable (Controla el flujo de la programa, para salir del bucle while)
+//Inicializar variable
 		int count = 0;
 		Scanner sc = new Scanner(System.in);
 
@@ -61,7 +62,7 @@ public class Tarea6Cine {
 			String answers = sc.nextLine();
 
 			
-// Se pide el usuario nombre, edad y cantidad de dinero
+// 
 			if (answers.equalsIgnoreCase("Si")) {
 				System.out.println("----------------------");
 				System.out.println("Como te llamas?");
@@ -76,12 +77,11 @@ public class Tarea6Cine {
 				int dinero = sc.nextInt();
 				System.out.println("-----------------------");
 
-// crea objeto que el usuario proporciona
+//
 				Espectador test = new Espectador(nombre, edad, dinero);
 				
 				
-// Recorrer todass los posiciones disponibles en la matriz tablero
-//que es un array bidimensional, representa los asientos disponibles en el cine.
+// 
 				for (int i = 0; i < tablero.length; i++) {
 					for (int j = 0; j < tablero.length; j++) {
 						System.out.print(tablero[i][j] + " ");
@@ -104,13 +104,13 @@ public class Tarea6Cine {
 				System.out.println("-----------------------");
 				
 				
-// Si elige la ocion 1 entrara en el random.
+// En el random.
 				if (answer == 1) {
 					System.out.println("----------------------");
 					System.out.println("Enhorabuena! Su asiento fue marcado con XX");
 					System.out.println("-----------------------");
 					
-// El programa verifica los requisitos del usuario, la edad, dinero.
+// 
 					if ((test.getEdad() >= test3.getEdadMin() && test.getMoney() >= test2.getPrecio())) {
 
 // Elige de manera aleatoria el asiento.
@@ -122,7 +122,7 @@ public class Tarea6Cine {
 						guardar[0] = tablero[randomRow][randomColumn];
 						tablero[randomRow][randomColumn] = "XX";  //Posicion aleatoria marcada como XX
 
-// Guardar posicion el el matriz, i=filas j=columnas
+// 
 						for (int i = 0; i < tablero.length; i++) {
 							for (int j = 0; j < tablero.length; j++) {
 								System.out.print(tablero[i][j] + " ");
