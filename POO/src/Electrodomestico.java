@@ -19,7 +19,7 @@ public class Electrodomestico {
 		this.color="blanco";
 		this.consumoenergetico='F';
 		this.preciobase=100;
-		this.peso=5;
+		this.peso=5; 
 		
 	}
 	
