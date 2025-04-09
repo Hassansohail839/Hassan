@@ -1,4 +1,4 @@
-
+package Ejercicio01;
 public class Lavadora extends Electrodomestico{
 
 //	public static void main(String[] args) {
