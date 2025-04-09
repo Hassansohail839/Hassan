@@ -6,13 +6,16 @@ public class Electrodomestico {
 //
 //	}
 
-	// Atributos
+// Atributos
 	private double precioBase;
 	private String color;
 	private char consumoEnergetico;
 	private double peso;
-
-//Constructoe por defeecto
+	
+	private final String COLOR_DEFECTO = "blanco";
+    private final char CONSUMO_DEFECTO = 'F';
+	
+// Constructor por defecto
 	
 	public Electrodomestico(){
 		this.precioBase=100;
@@ -36,11 +39,12 @@ public class Electrodomestico {
 public Electrodomestico(double precioBase, double peso,
 		String color, char consumoEnergetico ) {
 	this.precioBase=precioBase;
-	this.color=color;
+	this.color=validateColor(color);
 	this.consumoEnergetico=consumoEnergetico;
 	this.peso=peso;
 	
 }
+
 
 //Getters y Setters
 
@@ -78,5 +82,37 @@ public Electrodomestico(double precioBase, double peso,
 		this.peso = peso;
 	}
 	
+	
+//Metodo para comprobar colores
+	
+		private String validateColor(String color) {
+			String colorValidated=color.toLowerCase();
+			if (colorValidated.equals("blanco") || colorValidated.equals("negro") 
+					|| colorValidated.equals("rojo") || colorValidated.equals("azul") 
+					|| colorValidated.equals("gris"))
+			{
+				return colorValidated;
+			}
+			
+			else  {
+//				System.out.println("El color no es correcto, le asignamos un blanco por defecto");
+				return COLOR_DEFECTO;
+			}
+		}
+
+//Metodo para Comprobar consumo Energetico
+		
+		private char validateConsumoEnergetico(char consumoEnergetico) {
+//			String ConsumoEnergeticoValidated=consumoEnergetico.toUpperCase();
+
+			if (consumoEnergetico=='F')
+			{
+				return consumoEnergetico;
+			}
+			else {
+				return CONSUMO_DEFECTO;
+			}
+		}
+
 }
 
