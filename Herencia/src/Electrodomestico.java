@@ -1,10 +1,12 @@
 
 public class Electrodomestico {
 
-//	public static void main(String[] args) {
-//		// TODO Auto-generated method stub
-//
-//	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+//		validateColor();
+//		validateConsumoEnergetico();
+	}
 
 // Atributos
 	private double precioBase;
@@ -29,8 +31,8 @@ public class Electrodomestico {
 	public Electrodomestico(double precioBase, double peso) {
 		this.precioBase=precioBase;
 		this.peso=peso;
-		this.color="blanco";
-		this.consumoEnergetico='F';
+		this.color=COLOR_DEFECTO;
+		this.consumoEnergetico=CONSUMO_DEFECTO;
 	}
 	
 	
@@ -40,7 +42,7 @@ public Electrodomestico(double precioBase, double peso,
 		String color, char consumoEnergetico ) {
 	this.precioBase=precioBase;
 	this.color=validateColor(color);
-	this.consumoEnergetico=consumoEnergetico;
+	this.consumoEnergetico=validateConsumoEnergetico(consumoEnergetico);
 	this.peso=peso;
 	
 }
@@ -59,7 +61,6 @@ public Electrodomestico(double precioBase, double peso,
 	public String getcolor() {
 		return color;
 	}
-	
 	
 	
 	public void setcolor(String color) {
@@ -94,7 +95,7 @@ public Electrodomestico(double precioBase, double peso,
 				return colorValidated;
 			}
 			
-			else  {
+			else { 
 //				System.out.println("El color no es correcto, le asignamos un blanco por defecto");
 				return COLOR_DEFECTO;
 			}
@@ -113,6 +114,41 @@ public Electrodomestico(double precioBase, double peso,
 				return CONSUMO_DEFECTO;
 			}
 		}
+		
+//Metodo para precio final
 
-}
+		public double precioFinal() {
+			double precioFinal=this.precioBase;
+			switch (this.consumoEnergetico) {
+	        case 'A':
+	            precioFinal += 100;
+	            break;
+	        case 'B':
+	            precioFinal += 80;
+	            break;
+	        case 'C':
+	            precioFinal += 60;
+	            break;
+	        case 'D':
+	            precioFinal += 50;
+	            break;
+	        case 'E':
+	            precioFinal += 30;
+	            break;
+	        case 'F':
+	            precioFinal += 10;
+	            break;
+	    }
+			 if (this.peso >= 0 && this.peso < 20) {
+			        precioFinal += 10;
+			    } else if (this.peso >= 20 && this.peso < 50) {
+			        precioFinal += 50;
+			    } else if (this.peso >= 50) {
+			        precioFinal += 80;
+			    }
+
+			    return precioFinal;
+			}
+		}
+
 
