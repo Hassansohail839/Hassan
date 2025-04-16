@@ -41,6 +41,7 @@ public class ElectrodomesticoApp {
         System.out.println("Total Electrodomésticos: " + totalElectrodomesticos);
         System.out.println("Total Lavadoras: " + totalLavadoras);
         System.out.println("Total Televisiones: " + totalTelevisiones);
+        System.out.println("Total Electro: "+ (totalElectrodomesticos+totalLavadoras+totalTelevisiones));
     }
 
 	}
