@@ -1,6 +1,6 @@
 package Ejercicio02;
 
-public class Videojuego {
+public class Videojuego implements Entregable {
 
 //	public static void main(String[] args) {
 //		// TODO Auto-generated method stub
