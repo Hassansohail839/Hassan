@@ -10,7 +10,7 @@ public class Television extends Electrodomestico{
 	
 	//Atributos
 	
-	private double resolucion;
+	private int resolucion;
 	private boolean sintonizadorTDT;
 	
 	
@@ -52,7 +52,7 @@ public class Television extends Electrodomestico{
 		return resolucion;
 	}
 
-	public void setResolucion(double resolucion) {
+	public void setResolucion(int resolucion) {
 		this.resolucion = resolucion;
 	}
 	
