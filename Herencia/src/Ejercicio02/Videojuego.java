@@ -67,5 +67,29 @@ public class Videojuego implements Entregable {
 		this.compania=compania;
 		
 	}
+
+	@Override
+	public void entregar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void devolver() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean isEntregado() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int compareTo(Object a) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 }
