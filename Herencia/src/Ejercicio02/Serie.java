@@ -37,6 +37,15 @@ public class Serie implements Entregable {
 		this.genero = GENERO_DEFECTO;
 
 	}
+	
+	public Serie(String titulo, int numeroTemporadas) {
+		this.titulo = titulo;
+		this.creador = "";
+		this.numeroTemporadas = numeroTemporadas;
+		this.entregado = ENTREGADO_DEFECTO;
+		this.genero = GENERO_DEFECTO;
+
+	}
 
 	// Constructor con todos los atributos excepto el entregado
 
