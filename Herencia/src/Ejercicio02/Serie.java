@@ -63,7 +63,7 @@ public class Serie implements Entregable {
 	// Getters y Setters, excepto el entregado
 
 	public String gettitulo() {
-		return titulo;
+		return titulo;3
 	}
 
 	public void settitulo(String titulo) {
