@@ -1,28 +1,18 @@
-CREATE DATABASE tiendainfo;
-USE tiendainfo;
+-- Crear la base de datos
+CREATE DATABASE TiendaInformatica;
+USE TiendaInformatica;
 
-CREATE TABLE fabricantes (
-    codigo INT,
-    nombre VARCHAR(100),
-    PRIMARY KEY (codigo));
+-- Crear tabla FABRICANTES
+CREATE TABLE Fabricantes (
+    Codigo INT IDENTITY PRIMARY KEY,
+    Nombre NVARCHAR(100)
+);
 
-ALTER TABLE `fabricantes` CHANGE `codigo` `codigo` INT(11) NOT NULL AUTO_INCREMENT;
-
-INSERT INTO `fabricantes` (`codigo`, `nombre`) VALUES (NULL, 'HP');
-INSERT INTO fabricantes (nombre) VALUES ('LG');
-
-
-CREATE TABLE articulos (
-    codart INT  NOT NULL  AUTO_INCREMENT,
-    nombre VARCHAR(100),
-    precio FLOAT,
-    fabricante INT,
-    PRIMARY KEY (codart),
-    FOREIGN KEY (fabricante) 
-    REFERENCES fabricantes (codigo) 
-    ON DELETE CASCADE 
-    ON UPDATE CASCADE);
-
-
-
-CREATE TABLE `tiendainfo`.`prova` (`id` INT NOT NULL AUTO_INCREMENT , `nombre` VARCHAR(60) NOT NULL , PRIMARY KEY (`id`));
+-- Crear tabla ARTICULOS
+CREATE TABLE Articulos (
+    Codigo INT IDENTITY PRIMARY KEY,
+    Nombre NVARCHAR(100),
+    Precio INT,
+    Fabricante INT,
+    FOREIGN KEY (Fabricante) REFERENCES Fabricantes(Codigo)
+);
