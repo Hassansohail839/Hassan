@@ -19,7 +19,7 @@ public class Lavadora extends Electrodomestico{
     	
     }
     
- //Constructor con precio y peso
+ //Constructor con p con precio y peso
     
     public Lavadora(double precioBase, double peso) {
     	super(precioBase, peso);

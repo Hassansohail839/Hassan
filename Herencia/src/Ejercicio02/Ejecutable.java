@@ -27,7 +27,7 @@ public class Ejecutable {
         // Entregar algunos videojuegos y series
         series[1].entregar();
         series[3].entregar();
-        videojuegos[0].entregar();
+        videojuegos[0].entregar();ww
         videojuegos[2].entregar();
         
         
