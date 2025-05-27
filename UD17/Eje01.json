@@ -1,3 +1,7 @@
+
+
+// FABRICANTES
+
 [
   {
     "_id": 1,
@@ -38,5 +42,71 @@
   {
     "_id": 10,
     "nombre": "MSI"
+  }
+]
+
+
+//ARTICULOS
+
+[
+  {
+    "_id": 1,
+    "nombre": "Artículo 1",
+    "precio": 110,
+    "fabricante": 1
+  },
+  {
+    "_id": 2,
+    "nombre": "Artículo 2",
+    "precio": 120,
+    "fabricante": 2
+  },
+  {
+    "_id": 3,
+    "nombre": "Artículo 3",
+    "precio": 130,
+    "fabricante": 3
+  },
+  {
+    "_id": 4,
+    "nombre": "Artículo 4",
+    "precio": 140,
+    "fabricante": 4
+  },
+  {
+    "_id": 5,
+    "nombre": "Artículo 5",
+    "precio": 150,
+    "fabricante": 5
+  },
+  {
+    "_id": 6,
+    "nombre": "Artículo 6",
+    "precio": 160,
+    "fabricante": 6
+  },
+  {
+    "_id": 7,
+    "nombre": "Artículo 7",
+    "precio": 170,
+    "fabricante": 7
+  },
+  {
+    "_id": 8,
+    "nombre": "Artículo 8",
+    "precio": 180,
+    "fabricante": 8
+  },
+  {
+    "_id": 9,
+    "nombre": "Artículo 9",
+    "precio": 190,
+    "fabricante": 9
+  },
+  {
+    "_id": 10,
+    "nombre": "Artículo 10",
+    "precio": 200,
+    "fabricante": 10
   }
 ]
