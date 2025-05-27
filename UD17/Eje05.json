@@ -1,0 +1,111 @@
+
+
+//DESPACHOS
+
+[
+  {
+    "_id": 100,
+    "capacidad": 2
+  },
+  {
+    "_id": 101,
+    "capacidad": 3
+  },
+  {
+    "_id": 102,
+    "capacidad": 4
+  },
+  {
+    "_id": 103,
+    "capacidad": 5
+  },
+  {
+    "_id": 104,
+    "capacidad": 6
+  },
+  {
+    "_id": 105,
+    "capacidad": 7
+  },
+  {
+    "_id": 106,
+    "capacidad": 8
+  },
+  {
+    "_id": 107,
+    "capacidad": 9
+  },
+  {
+    "_id": 108,
+    "capacidad": 10
+  },
+  {
+    "_id": 109,
+    "capacidad": 11
+  }
+]
+
+//DIRECTORES
+
+[
+  {
+    "_id": "10000000",
+    "nombreApellidos": "Director 1",
+    "dniJefe": null,
+    "despacho": 100
+  },
+  {
+    "_id": "10000001",
+    "nombreApellidos": "Director 2",
+    "dniJefe": "10000000",
+    "despacho": 101
+  },
+  {
+    "_id": "10000002",
+    "nombreApellidos": "Director 3",
+    "dniJefe": "10000001",
+    "despacho": 102
+  },
+  {
+    "_id": "10000003",
+    "nombreApellidos": "Director 4",
+    "dniJefe": "10000002",
+    "despacho": 103
+  },
+  {
+    "_id": "10000004",
+    "nombreApellidos": "Director 5",
+    "dniJefe": "10000003",
+    "despacho": 104
+  },
+  {
+    "_id": "10000005",
+    "nombreApellidos": "Director 6",
+    "dniJefe": "10000004",
+    "despacho": 105
+  },
+  {
+    "_id": "10000006",
+    "nombreApellidos": "Director 7",
+    "dniJefe": "10000005",
+    "despacho": 106
+  },
+  {
+    "_id": "10000007",
+    "nombreApellidos": "Director 8",
+    "dniJefe": "10000006",
+    "despacho": 107
+  },
+  {
+    "_id": "10000008",
+    "nombreApellidos": "Director 9",
+    "dniJefe": "10000007",
+    "despacho": 108
+  },
+  {
+    "_id": "10000009",
+    "nombreApellidos": "Director 10",
+    "dniJefe": "10000008",
+    "despacho": 109
+  }
+]
