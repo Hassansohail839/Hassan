@@ -1,0 +1,42 @@
+[
+  {
+    "_id": 1,
+    "nombre": "Lenovo"
+  },
+  {
+    "_id": 2,
+    "nombre": "HP"
+  },
+  {
+    "_id": 3,
+    "nombre": "Asus"
+  },
+  {
+    "_id": 4,
+    "nombre": "Apple"
+  },
+  {
+    "_id": 5,
+    "nombre": "Dell"
+  },
+  {
+    "_id": 6,
+    "nombre": "Acer"
+  },
+  {
+    "_id": 7,
+    "nombre": "Microsoft"
+  },
+  {
+    "_id": 8,
+    "nombre": "Samsung"
+  },
+  {
+    "_id": 9,
+    "nombre": "Razer"
+  },
+  {
+    "_id": 10,
+    "nombre": "MSI"
+  }
+]
