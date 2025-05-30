@@ -15,15 +15,15 @@ public class Saludador extends JFrame {
     private JButton botonSaludar;
 
     public Saludador() {
-        setTitle("Saludador Personalizado");
+        setTitle("Saludador");
         setSize(300, 150);
         setLocationRelativeTo(null); // Centrar ventana
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
 
-        JLabel etiqueta = new JLabel("Escribe tu nombre:");
+        JLabel etiqueta = new JLabel("Quien ere?");
         campoTexto = new JTextField(15);
-        botonSaludar = new JButton("Saludar");
+        botonSaludar = new JButton("Pulsa");
 
         add(etiqueta);
         add(campoTexto);
@@ -33,7 +33,7 @@ public class Saludador extends JFrame {
         botonSaludar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String nombre = campoTexto.getText();
-                JOptionPane.showMessageDialog(null, "¡Hola " + nombre + "!");
+                JOptionPane.showMessageDialog(null, "Hola " + nombre + "!");
             }
         });
     }
