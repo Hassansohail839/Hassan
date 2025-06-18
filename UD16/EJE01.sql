@@ -51,3 +51,4 @@ WHERE Precio BETWEEN 60 AND 120;
 1.5
 SELECT Nombre, Precio * 166.386 AS PrecioEnPesetas 
 FROM ARTICULOS;
+    
