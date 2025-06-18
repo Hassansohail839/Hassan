@@ -1,9 +1,9 @@
 package com.ud21;
 
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;  // <-- JUnit 5
 
 class GeometriaTest {
 
