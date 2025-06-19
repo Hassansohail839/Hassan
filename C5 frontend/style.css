@@ -1,0 +1,272 @@
+body {
+  background-color: #e3f2fd;
+  color: #2e3c43;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #b3e5fc;
+  color: #2e3c43;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.galeria img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50px;
+  transition: box-shadow 0.3s ease;
+  display: block;
+}
+
+.galeria img:hover {
+  box-shadow: 5px 5px 15px #ffab91;
+}
+
+.galeria-item {
+  position: relative;
+  display: flex;
+  border-radius: 50px;
+  height: 500px;
+  width: 280px;
+  background-color: #ffffff;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1%;
+}
+
+.img-link {
+  display: none;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(50, 50, 50, 0.7);
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header {
+  background-color: #b3e5fc;
+  color: #2e3c43;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.barcos-paleta {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.mastermind-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 400px;
+}
+
+.mm-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mm-guess {
+  display: flex;
+  gap: 8px;
+}
+
+.mm-peg {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #80cbc4;
+  border: 2px solid #37474f;
+}
+
+.mm-feedback {
+  display: grid;
+  grid-template-columns: repeat(2, 12px);
+  grid-template-rows: repeat(2, 12px);
+  gap: 2px;
+  margin-left: 16px;
+}
+
+.mm-feedback-peg {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #b2dfdb;
+  border: 1px solid #37474f;
+}
+
+.mm-secret {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.mm-secret .mm-peg {
+  background: #37474f;
+}
+
+.mm-colors {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.mm-color {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #37474f;
+  cursor: pointer;
+}
+
+.mm-color.red {
+  background: #ef9a9a;
+}
+
+.mm-color.blue {
+  background: #90caf9;
+}
+
+.mm-color.green {
+  background: #a5d6a7;
+}
+
+.mm-color.yellow {
+  background: #fff59d;
+}
+
+.mm-color.purple {
+  background: #ce93d8;
+}
+
+.mm-color.orange {
+  background: #ffcc80;
+}
+
+.barco-img {
+  width: 60px;
+  height: auto;
+  cursor: grab;
+  user-select: none;
+}
+
+img.hit {
+  filter: brightness(0.5) sepia(1) hue-rotate(-50deg) saturate(5);
+  border: 2px solid #ef9a9a;
+  box-shadow: 0 0 10px #ef9a9a;
+  transition: 0.2s;
+}
+
+nav {
+  background-color: #80cbc4;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #37474f;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-about {
+  background-color: #b2ebf2;
+}
+
+nav a:hover {
+  color: #ff7043;
+}
+
+.battleship-board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(10, 30px);
+  gap: 2px;
+  justify-content: center;
+  margin: 2rem auto;
+  width: max-content;
+  background: #b2ebf2;
+  border: 4px solid #37474f;
+  border-radius: 8px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid #37474f;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cell.hit {
+  background: #ef9a9a;
+}
+
+.cell.miss {
+  background: #b0bec5;
+}
+
+.battleship-title {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #37474f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  color: #ff7043;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  min-height: 60vh;
+}
+
+footer {
+  background-color: #b3e5fc;
+  color: #2e3c43;
+  text-align: center;
+  padding: 1rem 0;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
