@@ -1,5 +1,5 @@
 body {
-  background-color: #e3f2fd;
+  background-color: #c1ddf1;
   color: #2e3c43;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -270,3 +270,20 @@ footer {
   justify-content: center;
 }
 
+.avatar-option {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid transparent;
+}
+
+.avatar-option:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.avatar-option.selected {
+  border-color: #4db6ac;
+}
