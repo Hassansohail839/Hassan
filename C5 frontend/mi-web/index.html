@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio - Mi Web</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('logoBtn').addEventListener('click', function() {
+    window.location.href = 'index.html';
+  });
+</script>
+
+<body>
+  <header>
+    <div class="logo">
+        
+         <img src="images/logo.png" alt="Logo Nube Verde" class="logo-img" style="cursor:pointer;" onclick="window.location.href='index.html'">
+    <h1>Nube Verde</h1>
+  </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+<main class="home-fondo">
+    
+  <div class="grid-productos">
+    <div class="producto-card">
+      <img id="main-img-1" src="images/Producto1a.webp" alt="Vaporizador Eco Nano" class="producto-principal">
+
+      <div class="miniaturas">
+        <img src="images/Producto1a.webp" alt="Vista frontal" onclick="cambiarImagen('main-img-1', 'images/Producto1a.webp')">
+        <img src="images/Producto1b.webp" alt="Vista lateral" onclick="cambiarImagen('main-img-1', 'images/Producto1b.webp')">
+        <img src="images/Producto1c.webp" alt="Vista trasera" onclick="cambiarImagen('main-img-1', 'images/Producto1c.webp')">
+        <img src="images/Producto1d.webp" alt="Vista detalle" onclick="cambiarImagen('main-img-1', 'images/Producto1d.webp')">
+      </div>
+
+      <h3>Eco Nano CBD2 Kit</h3>
+      <p class="precio"><span class="nuevo">$17.99</span> <span class="viejo">$24.99</span></p>
+    <button onclick="irAProducto('Eco Nano 2 Kit', 17.99, 'images/Producto1a.webp')">Comprar ahora</button>
+
+
+
+
+    </div>
+  </div>
+
+<div class="columna-central">
+  <!-- Banner Promocional -->
+  <div class="promo">
+    <h2>Oferta especial en CBD por tiempo limitado!</h2>
+    <p>Consigue un 20% de descuento en todos nuestros kits de vaporizadores hasta el domingo.</p>
+  <button onclick="alert('Oferta aplicada, gracias por aprovecharla!')">Aprovechar oferta</button>
+
+  </div>
+
+  <!-- Testimonios -->
+  <section class="testimonios">
+    <h2>Lo que opinan nuestros clientes</h2>
+    <div class="testimonios-grid">
+      <div class="testimonio">
+        <p>"Producto excelente, llegó rápido y funciona de maravilla. ¡Repetiré sin duda!"</p>
+        <h4>– Laura M.</h4>
+      </div>
+      <div class="testimonio">
+        <p>"Atención al cliente de 10 y calidad superior. Muy recomendado."</p>
+        <h4>– Javier R.</h4>
+      </div>
+      <div class="testimonio">
+        <p>"El pedido llegó en 24h. Estoy encantado con el servicio y el producto."</p>
+        <h4>– Marcos G.</h4>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<div class="producto-card">
+  <img id="main-img-2" src="images/Producto2a.webp" alt="Vaporizador Eco Max Pro" class="producto-principal">
+
+  <div class="miniaturas">
+    <img src="images/Producto2a.webp" alt="Vista frontal" onclick="cambiarImagen('main-img-2', 'images/Producto2a.webp')">
+    <img src="images/Producto2b.webp" alt="Vista lateral" onclick="cambiarImagen('main-img-2', 'images/Producto2b.webp')">
+    <img src="images/Producto2c.webp" alt="Vista trasera" onclick="cambiarImagen('main-img-2', 'images/Producto2c.webp')">
+    <img src="images/Producto2d.webp" alt="Vista detalle" onclick="cambiarImagen('main-img-2', 'images/Producto2d.webp')">
+  </div>
+
+  <h3>Eco Max Pro Kit</h3>
+  <p class="precio"><span class="nuevo">$29.99</span> <span class="viejo">$39.99</span></p>
+ <button onclick="irAProducto('Eco Max Pro Kit', 29.99, 'images/Producto2a.webp')">Comprar ahora</button>
+
+
+</div>
+
+</main>
+
+  <footer>
+    <p>&copy; 2025 Mi Web. Todos los derechos reservados.</p>
+    </footer>
+    </body>
+</html>
+
