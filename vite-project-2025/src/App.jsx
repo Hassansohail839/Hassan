@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import kebabImg from './assets/kebab.png' // asegúrate de tener esta imagen en esa ruta
+import kebabImg from './assets/kebab.jpg' // asegúrate de tener esta imagen en esa ruta
 
 function App() {
   const [count, setCount] = useState(0)
