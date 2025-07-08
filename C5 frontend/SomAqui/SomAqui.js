@@ -1,18 +1,48 @@
 const map = L.map('map').setView([41.3879, 2.1699], 8);
 const emergencias = [
   {
-    titulo: 'Incendio en Ribera d’Ebre',
-    coords: [41.1456, 0.6381],
+    titulo: 'Incendio en Paüls (Tarragona)',
+    coords: [40.9615, 0.4667], // Coordenadas aproximadas de Paüls
+    fecha: '7 de julio de 2025',
+    detalles: 'Más de 3.000 hectáreas afectadas, confinamientos y evacuaciones parciales. Fuego cruzó el río Ebro.',
+    tipo: 'Incendio forestal',
+    estado: 'En curso'
   },
   {
-    titulo: 'Ola de calor en Tarragona',
-    coords: [41.1189, 1.2445],
+    titulo: 'Incendio en Pinell de Solsonès (Lleida)',
+    coords: [41.9282, 1.2517],
+    fecha: '7 de julio de 2025',
+    detalles: '35 hectáreas afectadas, estabilizado.',
+    tipo: 'Incendio forestal',
+    estado: 'Estabilizado'
   },
   {
-    titulo: 'Corte de luz en Eixample',
-    coords: [41.3911, 2.1620],
+    titulo: 'Incendio en Torrefeta i Florejacs (Lleida)',
+    coords: [41.9964, 1.2350],
+    fecha: '2 de julio de 2025',
+    detalles: 'Más de 5.500 hectáreas, controlado, dos personas fallecidas.',
+    tipo: 'Incendio forestal',
+    estado: 'Controlado'
   },
+  {
+    titulo: 'Tiroteo en Calldetenes (Barcelona)',
+    coords: [41.9639, 2.2828],
+    fecha: '7 de julio de 2025',
+    detalles: 'Hombre armado atrincherado con rehenes, dos muertos y cinco policías heridos.',
+    tipo: 'Suceso policial',
+    estado: 'Resuelto'
+  },
+  {
+    titulo: 'Ola de Calor en Cataluña',
+    coords: [41.6100, 1.8500], // Coordenadas centrales aproximadas para la región
+    fecha: 'Finales de junio a principios de julio de 2025',
+    detalles: 'Temperaturas superiores a 41°C, mínimas nocturnas altas, aumento de riesgo de incendios.',
+    tipo: 'Condiciones meteorológicas',
+    estado: 'Finalizada'
+  },
+  // Puedes agregar más emergencias reales siguiendo este formato
 ];
+
 const lista = document.getElementById("lista-emergencias");
 const marcadores = [];
 
