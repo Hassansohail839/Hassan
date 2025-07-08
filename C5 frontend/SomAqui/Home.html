@@ -255,15 +255,6 @@
         .addTo(map)
         .bindPopup(`<b>${emergencia.titulo}</b>`);
     });
-    // Permitir que el usuario agregue su propio punto en el mapa
-map.on('click', function (e) {
-  const descripcion = prompt("¿Qué tipo de ayuda necesitas u ofreces?");
-  if (descripcion) {
-    const marker = L.marker(e.latlng).addTo(map);
-    marker.bindPopup(`<b>${descripcion}</b><br>Lat: ${e.latlng.lat.toFixed(4)}, Lng: ${e.latlng.lng.toFixed(4)}`).openPopup();
-  }
-});
-
   </script>
 
 
