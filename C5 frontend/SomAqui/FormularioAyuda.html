@@ -268,6 +268,10 @@
  Por favor, utiliza este formulario de manera responsable para que podamos ayudarte mejor.
 </div>
 
+<input type="hidden" id="lat" name="latitud">
+<input type="hidden" id="lng" name="longitud">
+<p>Ubicación detectada: <span id="ubicacion"></span></p>
+
     </form>
   </main>
 
@@ -342,5 +346,40 @@ document.querySelector('form').addEventListener('submit', function(event) {
 });
 
   </script>
+
+  <!-- 🟩 CAMPOS OCULTOS dentro del formulario (ponlos dentro del <form>) -->
+<input type="hidden" id="lat" name="latitud">
+<input type="hidden" id="lng" name="longitud">
+
+<!-- Opcional: Mostrar en pantalla la ubicación capturada -->
+<p>Ubicación detectada: <span id="ubicacion">Detectando...</span></p>
+
+<!-- 🟩 SCRIPT justo antes del cierre del <body> -->
+<script>
+  window.onload = function () {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(
+        function (position) {
+          const lat = position.coords.latitude.toFixed(6);
+          const lng = position.coords.longitude.toFixed(6);
+
+          // Asignar a los inputs ocultos
+          document.getElementById("lat").value = lat;
+          document.getElementById("lng").value = lng;
+
+          // Mostrar la ubicación al usuario (opcional)
+          document.getElementById("ubicacion").innerText = `${lat}, ${lng}`;
+        },
+        function (error) {
+          alert("No se pudo obtener tu ubicación. Activa el GPS o da permisos.");
+          console.error("Error de geolocalización:", error);
+        }
+      );
+    } else {
+      alert("Tu navegador no soporta geolocalización.");
+    }
+  };
+</script>
+
 </body>
 </html>
